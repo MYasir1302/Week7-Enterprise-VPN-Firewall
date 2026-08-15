@@ -1,0 +1,85 @@
+Aug 14 14:00:02.623 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Aug 14 14:00:02.624 HYPERVISOR: Started on IP = localhost, TCP port = 63458.
+Aug 14 14:00:03.104 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 14 14:00:03.104 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\7.1\project-files\dynamips 
+Aug 14 14:00:03.104 GENERAL: working_dir=C:\Users\HP\GNS3\projects\7.1\project-files\dynamips
+Aug 14 14:00:03.105 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\HP\GNS3\projects\7.1\project-files\dynamips\5fb14a46-c2ef-40de-9440-3989493b47a9 
+Aug 14 14:00:03.105 GENERAL: working_dir=C:\Users\HP\GNS3\projects\7.1\project-files\dynamips\5fb14a46-c2ef-40de-9440-3989493b47a9
+Aug 14 14:00:03.106 HYPERVISOR: exec_cmd: vm create R4 4 c7200 
+Aug 14 14:00:03.107 VM: VM R4 created.
+Aug 14 14:00:03.107 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5003 
+Aug 14 14:00:03.107 HYPERVISOR: exec_cmd: c7200 get_mac_addr R4 
+Aug 14 14:00:03.108 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 14 14:00:03.108 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-FE 
+Aug 14 14:00:03.108 HYPERVISOR: exec_cmd: vm set_ram R4 512 
+Aug 14 14:00:03.108 HYPERVISOR: exec_cmd: vm set_nvram R4 512 
+Aug 14 14:00:03.108 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 14 14:00:03.108 HYPERVISOR: exec_cmd: vm slot_remove_binding R4 0 0 
+Aug 14 14:00:03.110 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 14 14:00:03.110 HYPERVISOR: exec_cmd: vm slot_add_binding R4 0 0 C7200-IO-2FE 
+Aug 14 14:00:03.110 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:00:03.111 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 14 14:00:03.111 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60630d08 
+Aug 14 14:00:03.111 HYPERVISOR: exec_cmd: vm set_exec_area R4 64 
+Aug 14 14:00:03.111 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Aug 14 14:00:03.111 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 14 14:00:03.111 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 PA-FE-TX 
+Aug 14 14:00:03.111 HYPERVISOR: exec_cmd: vm get_status R4 
+Aug 14 14:00:03.112 HYPERVISOR: exec_cmd: vm slot_add_binding R4 2 0 PA-2FE-TX 
+Aug 14 14:00:03.160 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:00:05.310 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:00:06.481 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:00:06.677 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:00:06.880 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:00:12.688 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:01:25.109 HYPERVISOR: exec_cmd: vm set_ios R4 C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:01:25.109 HYPERVISOR: exec_cmd: vm rename R4 Branch-B-Router 
+Aug 14 14:01:25.167 HYPERVISOR: exec_cmd: vm set_ios Branch-B-Router C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:03:38.929 HYPERVISOR: exec_cmd: vm set_ios Branch-B-Router C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:03:54.116 HYPERVISOR: exec_cmd: nio create_udp udp-760b857d-cccd-45fb-9269-307ccecd336d 10016 127.0.0.1 10017 
+Aug 14 14:03:54.345 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Branch-B-Router 0 0 udp-760b857d-cccd-45fb-9269-307ccecd336d 
+Aug 14 14:03:54.345 HYPERVISOR: exec_cmd: vm get_status Branch-B-Router 
+Aug 14 14:04:06.006 HYPERVISOR: exec_cmd: nio create_udp udp-6bcbe87b-0e31-49cd-aff0-5add43770a9a 10025 127.0.0.1 10026 
+Aug 14 14:04:06.011 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Branch-B-Router 0 1 udp-6bcbe87b-0e31-49cd-aff0-5add43770a9a 
+Aug 14 14:04:06.013 HYPERVISOR: exec_cmd: vm get_status Branch-B-Router 
+Aug 14 14:05:14.835 HYPERVISOR: exec_cmd: vm set_ios Branch-B-Router C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:05:35.517 HYPERVISOR: exec_cmd: vm get_status Branch-B-Router 
+Aug 14 14:05:35.517 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Branch-B-Router 0 0 
+Aug 14 14:05:35.518 HYPERVISOR: exec_cmd: nio delete udp-760b857d-cccd-45fb-9269-307ccecd336d 
+Aug 14 14:05:38.963 HYPERVISOR: exec_cmd: vm set_ios Branch-B-Router C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:06:02.513 HYPERVISOR: exec_cmd: vm set_ios Branch-B-Router C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:06:06.681 HYPERVISOR: exec_cmd: vm set_ios Branch-B-Router C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:06:18.073 HYPERVISOR: exec_cmd: vm set_ios Branch-B-Router C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:06:33.626 HYPERVISOR: exec_cmd: nio create_udp udp-40592f90-5d16-4997-b4e4-f4c6709d48a2 10014 127.0.0.1 10015 
+Aug 14 14:06:33.631 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Branch-B-Router 0 0 udp-40592f90-5d16-4997-b4e4-f4c6709d48a2 
+Aug 14 14:06:33.631 HYPERVISOR: exec_cmd: vm get_status Branch-B-Router 
+Aug 14 14:06:36.058 HYPERVISOR: exec_cmd: vm set_ios Branch-B-Router C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:06:51.590 HYPERVISOR: exec_cmd: vm set_ios Branch-B-Router C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:06:51.782 HYPERVISOR: exec_cmd: vm set_ios Branch-B-Router C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:06:52.190 HYPERVISOR: exec_cmd: vm set_ios Branch-B-Router C:/Users/HP/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Aug 14 14:09:39.059 HYPERVISOR: exec_cmd: vm set_ghost_status Branch-B-Router 2 
+Aug 14 14:09:39.059 HYPERVISOR: exec_cmd: vm set_ghost_file Branch-B-Router C:\Users\HP\GNS3\projects\7.1\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-512.ghost 
+Aug 14 14:09:39.060 HYPERVISOR: exec_cmd: vm get_status Branch-B-Router 
+Aug 14 14:09:39.060 HYPERVISOR: exec_cmd: vm set_config Branch-B-Router configs\i4_startup-config.cfg 
+Aug 14 14:09:39.061 HYPERVISOR: exec_cmd: vm start Branch-B-Router 
+Aug 14 14:10:09.313 HYPERVISOR: exec_cmd: vm extract_config Branch-B-Router 
+Aug 14 14:21:09.404 HYPERVISOR: exec_cmd: vm extract_config Branch-B-Router 
+Aug 14 14:31:39.436 HYPERVISOR: exec_cmd: vm extract_config Branch-B-Router 
+Aug 14 14:36:39.453 HYPERVISOR: exec_cmd: vm extract_config Branch-B-Router 
+Aug 14 14:45:38.074 HYPERVISOR: exec_cmd: vm get_status Branch-B-Router 
+Aug 14 14:45:38.075 HYPERVISOR: exec_cmd: vm slot_disable_nio Branch-B-Router 0 0 
+Aug 14 14:45:38.094 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Branch-B-Router 0 0 
+Aug 14 14:45:38.096 HYPERVISOR: exec_cmd: nio delete udp-40592f90-5d16-4997-b4e4-f4c6709d48a2 
+Aug 14 14:45:43.636 HYPERVISOR: exec_cmd: vm get_status Branch-B-Router 
+Aug 14 14:45:43.636 HYPERVISOR: exec_cmd: vm slot_disable_nio Branch-B-Router 0 1 
+Aug 14 14:45:43.640 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding Branch-B-Router 0 1 
+Aug 14 14:45:43.642 HYPERVISOR: exec_cmd: nio delete udp-6bcbe87b-0e31-49cd-aff0-5add43770a9a 
+Aug 14 14:45:44.182 HYPERVISOR: exec_cmd: vm get_status Branch-B-Router 
+Aug 14 14:45:44.183 HYPERVISOR: exec_cmd: vm stop Branch-B-Router 
+Aug 14 14:45:44.277 VM: VM Branch-B-Router shutdown.
+Aug 14 14:45:44.277 HYPERVISOR: exec_cmd: vm extract_config Branch-B-Router 
+Aug 14 14:45:44.280 HYPERVISOR: exec_cmd: vm delete Branch-B-Router 
+Aug 14 14:45:44.280 VM: VM Branch-B-Router destroyed.
+Aug 14 14:45:44.281 HYPERVISOR: exec_cmd: hypervisor stop 
+Aug 14 14:45:44.517 HYPERVISOR: Stopped.
+Aug 14 14:45:44.517 GENERAL: reset done.
